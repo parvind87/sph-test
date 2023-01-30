@@ -1,5 +1,5 @@
-# Module Name
-SPH Test
+# SPH Products
+
 ## Description
 This module provides "Products" content type and QR code functionality.
 
