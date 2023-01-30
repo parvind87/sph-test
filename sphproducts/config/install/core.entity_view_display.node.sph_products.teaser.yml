@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sph_products.body
+    - field.field.node.sph_products.field_purchase_link
+    - field.field.node.sph_products.field_sph_image
+    - node.type.sph_products
+  module:
+    - text
+    - user
+id: node.sph_products.teaser
+targetEntityType: node
+bundle: sph_products
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_purchase_link: true
+  field_sph_image: true
