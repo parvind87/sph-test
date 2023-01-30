@@ -20,3 +20,6 @@ This module will automatically generate a content type - "SPH Products"
 ## Step 3 - Need to assign the custom block to sidebar region.
 <img width="882" alt="image" src="https://user-images.githubusercontent.com/8183450/215567344-03dac71f-f478-472a-9367-06d6bfc6c6e9.png">
 
+## Demo
+https://dev-ind10.pantheonsite.io/product/unicorn-iron-patch
+
