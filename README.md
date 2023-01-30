@@ -4,6 +4,9 @@
 This module provides "Products" content type and QR code functionality.
 
 ## Step 1 - Install this module
+
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/8183450/215567733-7623514f-c373-4f85-8fc0-a76fec104d92.png">
+
 This module will automatically generate a content type - "SPH Products"
 <img width="613" alt="image" src="https://user-images.githubusercontent.com/8183450/215566772-52c5e222-862f-4766-8929-d98156062d03.png">
 
