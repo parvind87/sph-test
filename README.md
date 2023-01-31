@@ -1,7 +1,10 @@
 # SPH Products
 
 ## Description
-This module provides "Products" content type and QR code functionality.
+This module provides "Products" content type and QR code block functionality. 
+Library used for QR Code generation -
+https://packagist.org/packages/bacon/bacon-qr-code
+
 
 ## Step 1 - Install this module
 
