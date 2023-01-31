@@ -24,8 +24,10 @@ class ShowqrBlock extends BlockBase {
   public function build() {
     $node = \Drupal::routeMatch()->getParameter('node');
     if ($node instanceof \Drupal\node\NodeInterface) {
-      // You can get nid and anything else you need from the node object.
       $nid = $node->id();
+      if($node->hasField('field_purchase_link') && !$node->get('field_purchase_link')->isEmpty()){
+        $url = $node->get('field_purchase_link')->getString();
+      }
     }
     $path = getcwd()."/sites/default/files/";
     $filename = "qrcode-".$nid.".png";
@@ -34,7 +36,7 @@ class ShowqrBlock extends BlockBase {
         new ImagickImageBackEnd()
     );
     $writer = new Writer($renderer);
-    $writer->writeFile('Hello World!'.$nid, $path.$filename);
+    $writer->writeFile($url, $path.$filename);
 
     return array(
       '#type' => 'markup',
